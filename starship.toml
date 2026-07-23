@@ -1,7 +1,7 @@
 add_newline = false
 #format = "[_vyndlar](bold red)@$directory"
-format = "$directory[$character](green)"
-right_format = "$python $time"
+format = "($python)$directory[$character](green)"
+right_format = "$git_branch$time"
 
 [character]
 success_symbol = "❯"
@@ -12,7 +12,9 @@ truncation_length = 3
 truncate_to_repo = true
 
 [git_branch]
-format = "on [$branch]($style) "
+#format = "on [$branch]($style) "
+format = '[$symbol$branch(:$remote_branch)]($style) '
+
 
 [time]
 disabled = false
