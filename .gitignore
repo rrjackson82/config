@@ -3,6 +3,6 @@
 !.gitignore
 !starship.toml
 !kitty/
-!kitty/
+!kitty/**
 !nvim/
 !nvim/**
