@@ -1,0 +1,25 @@
+add_newline = false
+#format = "[_vyndlar](bold red)@$directory"
+format = "$directory[$character](green)"
+right_format = "$python $time"
+
+[character]
+success_symbol = "❯"
+error_symbol = "❯(bold red)"
+
+[directory]
+truncation_length = 3
+truncate_to_repo = true
+
+[git_branch]
+format = "on [$branch]($style) "
+
+[time]
+disabled = false
+format = '[\[ $time \]]($style) '
+time_format = '%T'
+
+[python]
+disabled = false
+format = "$virtualenv"
+
